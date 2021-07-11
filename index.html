@@ -5,40 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Koria</title>
+        <title>Inicio | Koria</title>
         <link rel="icon" type="image/x-icon" href="assets/icon.png"/>
-        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet"/>
+        <link href="/css/animate.min.css" rel="stylesheet">
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top transition-4ms" id="nav-header">
             <div class="container px-5">
-                <a class="navbar-brand" href="#page-top">Koria</a>
+                <a class="navbar-brand" href="index.html#page-top">Koria</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#!">Recetas</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Alimentos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Comunidad</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Registrarse</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Registrarse</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Ingresar</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Header-->
-        <header class="masthead text-center text-white">
+        
+        <header class="masthead text-center text-white d-flex justify-content-center align-items-center">
             <div class="masthead-content">
                 <div class="container px-5">
-                    <h1 class="masthead-heading mb-0">Traduce tu comida</h1>
-                    <h2 class="masthead-subheading mb-0">en calorías</h2>
-                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Saber más</a>
+                    <h1 class="masthead-heading mb-0 wow animate__animated animate__fadeInDown" data-wow-delay="0.5s">Traduce tu comida</h1>
+                    <h2 class="masthead-subheading mb-0 wow animate__animated animate__fadeInDown" data-wow-delay="1.5s">en calorías</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5 wow animate__animated animate__fadeInDown" data-wow-delay="2.5s" href="#scroll">Saber más</a>
                 </div>
             </div>
             <div class="bg-circle-1 bg-circle"></div>
@@ -46,60 +43,86 @@
             <div class="bg-circle-3 bg-circle"></div>
             <div class="bg-circle-4 bg-circle"></div>
         </header>
-        <!-- Content section 1-->
-        <section id="scroll">
+        
+        <section id="scroll" class="mt-5">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/logo.jpg" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-2 wow animate__animated animate__fadeInRight" data-wow-offset="400">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/logo.jpg" alt="Logotipo de Koria" /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
-                        <div class="p-5">
-                            <h2 class="display-4">¿Cómo funciona Koria?</h2>
-                            <p>Las personas registran los alimentos que comen en su día para llevar una cuenta de las calorías que consumen. Dependiendo de su necesidad, logran perder o ganar peso.</p>
+                        <div class="p-md-5">
+                            <h2 class="display-4 text-nowrap wow animate__animated animate__fadeInLeft" data-wow-offset="200">¿Cómo funciona Koria?</h2>
+                            <p class="fs-5 wow animate__animated animate__fadeInLeft animate__delay-1s" data-wow-offset="100">Las personas registran los alimentos que comen en su día para llevar una cuenta de las calorías que consumen. Dependiendo de su necesidad, logran perder o ganar peso.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Content section 2-->
+        
         <section>
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/img2.jpg" alt="..." /></div>
+                    <div class="col-lg-6 wow animate__animated animate__fadeInLeft" data-wow-offset="300">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/img2.jpg" alt="Grafico mostrando la aplicacion: calorias restantes, calorias consumidas, peso actual, peso ideal, etc" /></div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="p-5">
-                            <h2 class="display-4">Herramientas para conseguir su objetivo de dieta</h2>
-                            <p>Diario, calendario, estadisticas, recetas, información nutricional, una aplicacion movil y mucho más para ayudarte.</p>
+                        <div class="p-md-5">
+                            <h2 class="display-4 wow animate__animated animate__fadeInRight" data-wow-offset="200">Herramientas para conseguir su objetivo de dieta</h2>
+                            <p class="fs-5 wow animate__animated animate__fadeInRight animate__delay-1s" data-wow-offset="200">Diario, calendario, estadisticas, recetas, información nutricional, una aplicacion movil y mucho más para ayudarte.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Content section 3-->
+        
         <section>
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/img3.jpg" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-2 wow animate__animated animate__fadeInRight" data-wow-offset="300">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/img3.jpg" alt="Celular con imagotipo de Koria" /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
-                        <div class="p-5">
-                            <h2 class="display-4">¿Por qué elegir Koria?</h2>
-                            <p>Si bien en el mercado hay muchas aplicaciones para llevar un registro de calorias, ninguna como Koria puede brindarte un seguimiento activo y una comunidad de respaldo. Manten el contacto con tus amigos y logren juntos sus metas. Todo esto es posible gracias a nuestros usuarios.</p>
+                        <div class="p-md-5">
+                            <h2 class="display-4 text-nowrap wow animate__animated animate__fadeInLeft" data-wow-offset="200">¿Por qué elegir Koria?</h2>
+                            <p class="fs-5 wow animate__animated animate__fadeInLeft animate__delay-1s" data-wow-offset="200">Si bien en el mercado hay muchas aplicaciones para llevar un registro de calorias, ninguna como Koria puede brindarte un seguimiento activo y una comunidad de respaldo. Manten el contacto con tus amigos y logren juntos sus metas. Todo esto es posible gracias a nuestros usuarios.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-black">
+
+        <footer class="mt-5 py-5 bg-dark">
+            <div class="text-white d-flex justify-content-around align-items-center">
+                <div>
+                    <p class="text-white m-0">Visualización e Interfaces - <a href="https://www.unlam.edu.ar/" target="_blank" class="text-white">Universidad Nacional de La Matanza</a></p>
+                </div>
+                <div>
+                    <ul class="m-0">
+                        <li><p class="m-0">Davies, Maximiliano Nicolás</p></li>
+                        <li><p class="m-0">Pérez, Gastón Ezequiel</p></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
-        <!-- Bootstrap core JS-->
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init({
+                mobile: false
+            });
+        </script>
+        <script>
+            $(document).on('scroll', function(){
+                if ( $(window).scrollTop() > 180) {
+                    $('#nav-header').addClass('background-black');
+                } else {
+                    $('#nav-header').removeClass('background-black');
+                }
+            });
+        </script>
     </body>
 </html>
