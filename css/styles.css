@@ -10939,6 +10939,34 @@ header.masthead .bg-circle-4 {
 .transition-4ms {
     transition: 0.4s;
 }
+.my-register {
+    margin: 8em 0 5em 0;
+}
+.img-iso {
+    width: 75px;
+}
+.background-brand {
+    background: rgb(235,67,128);
+    background: linear-gradient(90deg, rgba(235,67,128,1) 20%, rgba(217,137,143,1) 100%);
+}
+.register-container {
+    position: relative;
+    overflow: hidden;
+}
+.register-input {
+    height: 45px;
+}
+.border-radius-15px {
+    border-radius: 15px;
+}
+.google-play-svg {
+    width: 22% !important;
+    height: auto;
+}
+.app-store-svg {
+    width: 20% !important;
+    height: auto;
+}
 
 @media (min-width: 992px) {
   header.masthead {
@@ -10956,5 +10984,22 @@ header.masthead .bg-circle-4 {
 @media screen and (max-width: 992px) {
     .text-nowrap {
         white-space: normal !important;
+    }
+    .google-play-svg {
+        width: auto !important;
+    }
+    .app-store-svg {
+        width: auto !important;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .download-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .google-play-svg {
+        margin-bottom: 10px;
     }
 }
