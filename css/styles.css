@@ -10891,6 +10891,7 @@ header.masthead {
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
+  min-height: 100vh;
 }
 header.masthead .masthead-content {
   z-index: 1;
@@ -10932,6 +10933,12 @@ header.masthead .bg-circle-4 {
   top: -5rem;
   right: 35%;
 }
+.background-black {
+    background-color: #000;
+}
+.transition-4ms {
+    transition: 0.4s;
+}
 
 @media (min-width: 992px) {
   header.masthead {
@@ -10944,4 +10951,10 @@ header.masthead .bg-circle-4 {
   header.masthead .masthead-content .masthead-subheading {
     font-size: 4rem;
   }
+}
+
+@media screen and (max-width: 992px) {
+    .text-nowrap {
+        white-space: normal !important;
+    }
 }
