@@ -10986,6 +10986,10 @@ header.masthead .bg-circle-4 {
 .py-8 {
     padding: 8em 0 8em 0;
 }
+.star-brand {
+    color: rgb(235,67,128);
+    font-size: 2em;
+}
 
 @media (min-width: 992px) {
   header.masthead {
