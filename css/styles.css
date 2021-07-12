@@ -10967,6 +10967,25 @@ header.masthead .bg-circle-4 {
     width: 20% !important;
     height: auto;
 }
+.hr-style1 {
+    border: 0;
+    height: 1px;
+    background: #000;
+    background-image: -webkit-linear-gradient(left, #ccc, #000, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #000, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #000, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #000, #ccc);
+}
+.koria-scroll {
+    position: absolute;
+    top: 53em;
+}
+.py-7 {
+    padding: 7em 0 7em 0;
+}
+.py-8 {
+    padding: 8em 0 8em 0;
+}
 
 @media (min-width: 992px) {
   header.masthead {

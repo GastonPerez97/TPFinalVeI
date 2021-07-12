@@ -20,11 +20,15 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#!">Recetas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Alimentos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Comunidad</a></li>
-                        <li class="nav-item"><a class="nav-link" href="register.html">Registrarse</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Ingresar</a></li>
+                        <div class="d-flex me-2">
+                            <li class="nav-item"><a class="nav-link" href="#!">Recetas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Alimentos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Comunidad</a></li>
+                        </div>
+                        <div class="d-flex ms-2">
+                            <li class="nav-item"><a class="nav-link" href="register.html">Registrarse</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Ingresar</a></li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -43,17 +47,19 @@
             <div class="bg-circle-3 bg-circle"></div>
             <div class="bg-circle-4 bg-circle"></div>
         </header>
+
+        <span class="koria-scroll" id="scroll"></span>
         
-        <section id="scroll" class="mt-5">
-            <div class="container px-5">
+        <section class="mt-5">
+            <div class="container px-md-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2 wow animate__animated animate__fadeInRight" data-wow-offset="400">
                         <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/logo.jpg" alt="Logotipo de Koria" /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
-                        <div class="p-md-5">
-                            <h2 class="display-4 text-nowrap wow animate__animated animate__fadeInLeft" data-wow-offset="200">¿Cómo funciona Koria?</h2>
-                            <p class="fs-5 wow animate__animated animate__fadeInLeft animate__delay-1s" data-wow-offset="100">Las personas registran los alimentos que comen en su día para llevar una cuenta de las calorías que consumen. Dependiendo de su necesidad, logran perder o ganar peso.</p>
+                        <div class="p-md-5 wow animate__animated animate__fadeInLeft" data-wow-offset="200">
+                            <h2 class="display-4 text-nowrap">¿Cómo funciona Koria?</h2>
+                            <p class="fs-5">Las personas registran los alimentos que comen en su día para llevar una cuenta de las calorías que consumen. Dependiendo de su necesidad, logran perder o ganar peso.</p>
                         </div>
                     </div>
                 </div>
@@ -61,15 +67,15 @@
         </section>
         
         <section>
-            <div class="container px-5">
+            <div class="container px-md-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 wow animate__animated animate__fadeInLeft" data-wow-offset="300">
                         <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/img2.jpg" alt="Grafico mostrando la aplicacion: calorias restantes, calorias consumidas, peso actual, peso ideal, etc" /></div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="p-md-5">
-                            <h2 class="display-4 wow animate__animated animate__fadeInRight" data-wow-offset="200">Herramientas para conseguir su objetivo de dieta</h2>
-                            <p class="fs-5 wow animate__animated animate__fadeInRight animate__delay-1s" data-wow-offset="200">Diario, calendario, estadisticas, recetas, información nutricional, una aplicacion movil y mucho más para ayudarte.</p>
+                        <div class="p-md-5 wow animate__animated animate__fadeInRight" data-wow-offset="200">
+                            <h2 class="display-4">Herramientas para conseguir su objetivo de dieta</h2>
+                            <p class="fs-5">Diario, calendario, estadisticas, recetas, información nutricional, una aplicacion movil y mucho más para ayudarte.</p>
                         </div>
                     </div>
                 </div>
@@ -77,25 +83,67 @@
         </section>
         
         <section>
-            <div class="container px-5">
+            <div class="container px-md-5 mb-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2 wow animate__animated animate__fadeInRight" data-wow-offset="300">
                         <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/img3.jpg" alt="Celular con imagotipo de Koria" /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
-                        <div class="p-md-5">
-                            <h2 class="display-4 text-nowrap wow animate__animated animate__fadeInLeft" data-wow-offset="200">¿Por qué elegir Koria?</h2>
-                            <p class="fs-5 wow animate__animated animate__fadeInLeft animate__delay-1s" data-wow-offset="200">Si bien en el mercado hay muchas aplicaciones para llevar un registro de calorias, ninguna como Koria puede brindarte un seguimiento activo y una comunidad de respaldo. Manten el contacto con tus amigos y logren juntos sus metas. Todo esto es posible gracias a nuestros usuarios.</p>
+                        <div class="p-md-5 wow animate__animated animate__fadeInLeft" data-wow-offset="200">
+                            <h2 class="display-4 text-nowrap">¿Por qué elegir Koria?</h2>
+                            <p class="fs-5">Si bien en el mercado hay muchas aplicaciones para llevar un registro de calorias, ninguna como Koria puede brindarte un seguimiento activo y una comunidad de respaldo. Manten el contacto con tus amigos y logren juntos sus metas. Todo esto es posible gracias a nuestros usuarios.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer class="mt-5 py-5 bg-dark">
-            <div class="text-white d-flex justify-content-around align-items-center">
-                <div>
-                    <p class="text-white m-0">Visualización e Interfaces - <a href="https://www.unlam.edu.ar/" target="_blank" class="text-white">Universidad Nacional de La Matanza</a></p>
+        <section class="background-brand">
+            <div class="container text-white">
+                <div class="row px-5 py-7 gx-5">
+                    <div class="col-6 text-center">
+                        <img src="assets/img/phones-app.png" alt="Celulares Android y IOS con la aplicación Koria abierta.">
+                    </div>
+                    <div class="col-6">
+                        <h1 class="display-4 text-center">¡Empieza ahora!</h1>
+                        <p class="fs-5 my-4">Más de 50.000 personas han perdido peso con Koria. Empieza tu viaje de pérdida de peso hoy mismo y accede a la aplicación con más calidad en comida y nutrición del mundo.</p>
+                        <ul class="fs-4">
+                            <li>Aplicación 100% gratis.</li>
+                            <li>Fácil y rápido de usar.</li>
+                            <li>Gran comunidad de apoyo.</li>
+                            <li>Éxito demostrado.</li>
+                        </ul>
+                        <div class="text-center mt-5">
+                            <h2 class="display-4 my-3">¡Descargala gratis!</h2>
+                            <div class="download-container">
+                                <a href="https://play.google.com/store" target="_blank" class="text-decoration-none me-sm-4">
+                                    <img src="assets/img/googleplay.svg" alt="Descargar en Google Play" class="google-play-svg">
+                                </a>
+                                <a href="https://www.apple.com/la/app-store/" target="_blank" class="text-decoration-none">
+                                    <img src="assets/img/appstore.svg" alt="Descargar en App Store"  class="app-store-svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row px-5 py-8 gx-5">
+                    <div class="col text-center">
+                        <h1 class="display-4">¿Quieres crear una cuenta?</h1>
+                        <a href="register.html" class="btn btn-xl btn-primary rounded-pill mt-4 mb-5">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-5 bg-dark">
+            <div class="text-white d-flex flex-column flex-md-row justify-content-around align-items-center">
+                <div class="mb-4 mb-md-0 text-center">
+                    <p class="text-white m-0 px-2 px-sm-0">Visualización e Interfaces - <a href="https://www.unlam.edu.ar/" target="_blank" class="text-white">Universidad Nacional de La Matanza</a></p>
                 </div>
                 <div>
                     <ul class="m-0">

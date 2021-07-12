@@ -20,23 +20,28 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#!">Recetas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Alimentos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Comunidad</a></li>
-                        <li class="nav-item"><a class="nav-link" href="register.html">Registrarse</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Ingresar</a></li>
+                        <div class="d-flex me-2">
+                            <li class="nav-item"><a class="nav-link" href="#!">Recetas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Alimentos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Comunidad</a></li>
+                        </div>
+                        <div class="d-flex ms-2">
+                            <li class="nav-item"><a class="nav-link" href="register.html">Registrarse</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Ingresar</a></li>
+                        </div>
                     </ul>
                 </div>
             </div>
         </nav>
 
         <section class="container mx-auto my-register">
-            <div class="p-5 border-radius-15px bg-white shadow">
+            <div class="p-4 p-md-5 border-radius-15px bg-white shadow">
                 <div class="row register-container d-flex justify-content-between align-items-center">
                     <div class="col-12 col-lg-6 animate__animated animate__fadeInLeft animate__fast">      
                         <div class="fs-5 mb-5">
                             <p class="display-4 fw-bold">¡Registrate en Koria!</p>
-                            <p>Puedes registrarte desde aqui o desde tu teléfono. ¡Descarga la aplicación y recibe alertas personalizadas y mejora tu calidad de vida!</p>
+                            <p>Puedes registrarte desde aqui o desde tu teléfono.</p>
+                            <p>¡Descarga la aplicación y recibe alertas personalizadas y mejora tu calidad de vida!</p>
                         </div>
                         
                         <form>
@@ -45,7 +50,7 @@
                                     <label class="form-label">Nombre</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="fas fa-user fa-fw"></i></span>
-                                        <input type="text" class="form-control register-input" />
+                                        <input type="text" class="form-control register-input" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?"/>
                                     </div>
                                 </div>
 
@@ -102,7 +107,9 @@
                         </div>
                     </div>
 
-                    <div class="text-center my-4">
+                    <hr class="hr-style1 my-5">
+
+                    <div class="text-center mb-4">
                         <p class="display-4 fw-bold mb-4">¡Descargala gratis!</p>
                         <div class="download-container">
                             <a href="https://play.google.com/store" target="_blank" class="text-decoration-none me-sm-4">
@@ -118,9 +125,9 @@
         </section>
         
         <footer class="py-5 bg-dark">
-            <div class="text-white d-flex justify-content-around align-items-center">
-                <div>
-                    <p class="text-white m-0">Visualización e Interfaces - <a href="https://www.unlam.edu.ar/" target="_blank" class="text-white">Universidad Nacional de La Matanza</a></p>
+            <div class="text-white d-flex flex-column flex-md-row justify-content-around align-items-center">
+                <div class="mb-4 mb-md-0 text-center">
+                    <p class="text-white m-0 px-2 px-sm-0">Visualización e Interfaces - <a href="https://www.unlam.edu.ar/" target="_blank" class="text-white">Universidad Nacional de La Matanza</a></p>
                 </div>
                 <div>
                     <ul class="m-0">
