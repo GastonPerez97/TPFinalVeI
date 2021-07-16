@@ -27,7 +27,7 @@ function confirmRegister() {
 function problemAlert() {
     swalWithBootstrapButtons.fire({
         html: '<p>Este sitio web fue creado para la materia <b>Visualización e Interfaces</b>, de la UNLaM.</p><p>El sitio solo es maquetado, no hay funcionalidad, y muchas secciones no fueron creadas ya que solo se pidieron 3 interfaces para el sitio web.</p>',
-        imageUrl: '/assets/img/unlam.png',
+        imageUrl: 'assets/img/unlam.png',
         imageWidth: 140,
         imageHeight: 140,
         imageAlt: "Imagotipo de la UNLaM",
