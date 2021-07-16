@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Estadísticas | Koria</title>
+        <link rel="icon" type="image/x-icon" href="assets/icon.png"/>
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link href="/css/animate.min.css" rel="stylesheet">
+    </head>
+    <body id="page-top">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top transition-4ms mb-5" id="nav-header">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html">Koria</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <div class="d-flex flex-column flex-lg-row me-0 me-lg-2 mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" href="stats.html">Estadísticas</a></li>
+                            <li class="nav-item"><a class="nav-link cursor-notAllowed" onclick="maintenanceAlert()">Recetas</a></li>
+                            <li class="nav-item"><a class="nav-link cursor-notAllowed" onclick="maintenanceAlert()">Alimentos</a></li>
+                            <li class="nav-item"><a class="nav-link cursor-notAllowed" onclick="maintenanceAlert()">Comunidad</a></li>
+                        </div>
+                        <div class="d-flex flex-column flex-lg-row ms-0 mg-lg-2">
+                            <li class="nav-item"><a class="nav-link" href="register.html">Registrarse</a></li>
+                            <li class="nav-item"><a class="nav-link cursor-notAllowed" onclick="maintenanceAlert()">Ingresar</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container mx-auto my-8em">
+            <div class="row mb-4">
+                <h1>Tipos de dietas:</h1>
+                <p class="fs-5">A continuación vamos a detallarte algunos tipos de dietas que puedes encontrar.</p>
+                <p class="fs-5">Antes de elegir un tipo de dieta es muy recomendable acudir a <b>personal especializado en nutrición</b>, que te aconsejará sobre cómo adelgazar de la manera más saludable y que mejor se adapte a tus características físicas y médicas.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 d-flex justify-content-center">
+                <div class="col d-flex flex-column justify-content-around">
+                    <h2 class="text-center">Dieta Paleo</h2>
+                    <canvas id="paleo" aria-label="Grafico de dieta paleo" role="img"></canvas>
+                </div>
+                <div class="col d-flex flex-column justify-content-around">
+                    <h2 class="text-center mt-5 mt-md-0">Dieta baja en carbohidratos</h2>
+                    <canvas id="lowCarbo" aria-label="Grafico de dieta baja en carbohidratos" role="img"></canvas>
+                </div>
+                <div class="col d-flex flex-column justify-content-around">
+                    <h2 class="text-center mt-5 mt-lg-0">Dieta Mediterránea</h2>
+                    <canvas id="mediterranean" aria-label="Grafico de dieta mediterranea" role="img"></canvas>
+                </div>
+                <div class="col d-flex flex-column justify-content-around">
+                    <h2 class="text-center mt-5 mt-xl-0">Dieta Vegetariana</h2>
+                    <canvas id="vegan" aria-label="Grafico de dieta vegetariana" role="img"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto my-8em">
+            <div class="row mb-4">
+                <h1>Los 25 países con mayor tasa de obesidad (% de población):</h1>
+                <p class="fs-5">Excluyendo estas pequeñas islas del Pacífico (con una población muy pequeña), los mayores niveles de obesidad se encuentran en los estados del Golfo (Kuwait 37,9%) y los Estados Unidos (36,2%). Las tasas de obesidad en todo el mundo han aumentado en las últimas décadas.</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <canvas id="highestObesity" aria-label="Grafico de paises mas obesos" role="img"></canvas>
+                    <p class="text-center mt-1">Fuente: CIA Factbook - Febrero 2020</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto my-8em">
+            <div class="row mb-4">
+                <h1>Los 25 países con menor tasa de obesidad (% de población):</h1>
+                <p class="fs-5">Los países con las tasas de obesidad más bajas tienden a ser economías en desarrollo de bajos ingresos, aunque Japón es una excepción.</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <canvas id="lowestObesity" aria-label="Grafico de paises menos obesos" role="img"></canvas>
+                    <p class="text-center mt-1">Fuente: CIA Factbook - Febrero 2020</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto my-8em">
+            <div class="row mb-4">
+                <h1>Cantidad de personas que han empezado a usar Koria:</h1>
+                <p class="fs-5">Desde el lanzamiento de Koria en marzo de 2020, más de 50.000 personas han empezado a utilizarla para perder peso de manera saludable, con una aplicación fácil de usar, herramientas en línea y apoyo de la comunidad.</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <canvas id="koriaUsers" aria-label="Grafico de cantidad de personas que han empezado a usar Koria desde marzo 2020" role="img"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="display-4">¿Qué estás esperando para usar Koria?</h1>
+                        <h1 class="display-4">¡Registrate y empieza a traducir tus calorías!</h1>
+                        <a href="register.html" class="btn btn-xl btn-primary rounded-pill mt-4 mb-5">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="py-5 bg-dark">
+            <div class="text-white d-flex flex-column flex-md-row justify-content-around align-items-center">
+                <div class="mb-4 mb-md-0 text-center">
+                    <p class="text-white m-0 px-2 px-sm-0">Visualización e Interfaces - <a href="https://www.unlam.edu.ar/" target="_blank" class="text-white">Universidad Nacional de La Matanza</a></p>
+                </div>
+                <div>
+                    <ul class="m-0">
+                        <li><p class="m-0">Davies, Maximiliano Nicolás</p></li>
+                        <li><p class="m-0">Pérez, Gastón Ezequiel</p></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/chart.min.js"></script>
+        <script src="js/charts.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/alerts.js"></script>
+        <script>
+            $(document).on('scroll', function(){
+                if ( $(window).scrollTop() > 180) {
+                    $('#nav-header').addClass('background-black');
+                } else {
+                    $('#nav-header').removeClass('background-black');
+                }
+            });
+        </script>
+    </body>
+</html>
