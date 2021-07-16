@@ -20,14 +20,15 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <div class="d-flex me-2">
-                            <li class="nav-item"><a class="nav-link" href="#!">Recetas</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#!">Alimentos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#!">Comunidad</a></li>
+                        <div class="d-flex flex-column flex-lg-row me-0 me-lg-2 mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="stats.html">Estadísticas</a></li>
+                            <li class="nav-item"><a class="nav-link cursor-notAllowed" onclick="maintenanceAlert()">Recetas</a></li>
+                            <li class="nav-item"><a class="nav-link cursor-notAllowed" onclick="maintenanceAlert()">Alimentos</a></li>
+                            <li class="nav-item"><a class="nav-link cursor-notAllowed" onclick="maintenanceAlert()">Comunidad</a></li>
                         </div>
-                        <div class="d-flex ms-2">
+                        <div class="d-flex flex-column flex-lg-row ms-0 mg-lg-2">
                             <li class="nav-item"><a class="nav-link" href="register.html">Registrarse</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#!">Ingresar</a></li>
+                            <li class="nav-item"><a class="nav-link cursor-notAllowed" onclick="maintenanceAlert()">Ingresar</a></li>
                         </div>
                     </ul>
                 </div>
@@ -58,7 +59,7 @@
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-md-5 wow animate__animated animate__fadeInLeft" data-wow-offset="200">
-                            <h2 class="display-4 text-nowrap">¿Cómo funciona Koria?</h2>
+                            <h2 class="display-4 text-nowrap text-center text-md-start">¿Cómo funciona Koria?</h2>
                             <p class="fs-5">Las personas registran los alimentos que comen en su día para llevar una cuenta de las calorías que consumen. Dependiendo de su necesidad, logran perder o ganar peso.</p>
                         </div>
                     </div>
@@ -74,7 +75,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="p-md-5 wow animate__animated animate__fadeInRight" data-wow-offset="200">
-                            <h2 class="display-4">Herramientas para conseguir su objetivo de dieta</h2>
+                            <h2 class="display-4 text-center text-md-start">Herramientas para conseguir su objetivo de dieta</h2>
                             <p class="fs-5">Diario, calendario, estadisticas, recetas, información nutricional, una aplicacion movil y mucho más para ayudarte.</p>
                         </div>
                     </div>
@@ -90,7 +91,7 @@
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-md-5 wow animate__animated animate__fadeInLeft" data-wow-offset="200">
-                            <h2 class="display-4 text-nowrap">¿Por qué elegir Koria?</h2>
+                            <h2 class="display-4 text-nowrap text-center text-md-start">¿Por qué elegir Koria?</h2>
                             <p class="fs-5">Si bien en el mercado hay muchas aplicaciones para llevar un registro de calorias, ninguna como Koria puede brindarte un seguimiento activo y una comunidad de respaldo. Manten el contacto con tus amigos y logren juntos sus metas. Todo esto es posible gracias a nuestros usuarios.</p>
                         </div>
                     </div>
@@ -282,7 +283,7 @@
     
                                 <div class="card-body pt-0 d-flex flex-column justify-content-between">
                                     <h5 class="card-title text-center mb-3">Karen Solis</h5>
-                                    <p class="card-text">Me ayuda bastante a dar seguimiento al consumo de mis alimentos y peso, puedes poner recordatorios, guardar comidas que frecuentas consumir y hacer rápido el registro diario.</p>
+                                    <p class="card-text">Me ayuda bastante a dar seguimiento al consumo de mis alimentos y peso, puedes poner recordatorios, guardar comidas que frecuentas consumir y hacer rápido el registro diario. ¡Muy recomendable!</p>
     
                                     <div class="d-flex justify-content-center my-4">
                                         <i class="fas fa-star star-brand"></i>
@@ -336,6 +337,8 @@
         <script src="js/scripts.js"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/wow.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/alerts.js"></script>
         <script>
             new WOW().init({
                 mobile: false

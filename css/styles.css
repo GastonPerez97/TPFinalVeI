@@ -10942,6 +10942,9 @@ header.masthead .bg-circle-4 {
 .my-register {
     margin: 8em 0 5em 0;
 }
+.my-8em {
+    margin: 8em 0 8em 0;
+}
 .img-iso {
     width: 75px;
 }
@@ -10989,6 +10992,32 @@ header.masthead .bg-circle-4 {
 .star-brand {
     color: rgb(235,67,128);
     font-size: 2em;
+}
+.cursor-notAllowed {
+    cursor: not-allowed;
+}
+.underline-hover {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+.underline-hover:hover {
+    color: #000;
+}
+.underline-hover::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ee0979;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.underline-hover:hover::before {
+    transform: scaleX(1);
 }
 
 @media (min-width: 992px) {
